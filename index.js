@@ -25,7 +25,7 @@ class Formatter {
         let newArray = s;
         function arrayFunction() {
             for (let i = 0; i < newArray.length; i++) {
-                if (newArray[i] === 'The' && newArray[i] === 'A' && newArray[i] === 'An' && newArray[i] === 'But' && newArray[i] === 'Of' && newArray[i] === 'And' && newArray[i] === 'For' && newArray[i] === 'At' && newArray[i] === 'By' && newArray[i] === 'From') {
+                if (newArray[i] === 'The' || newArray[i] === 'A' || newArray[i] === 'An' || newArray[i] === 'But' || newArray[i] === 'Of' || newArray[i] === 'And' || newArray[i] === 'For' || newArray[i] === 'At' || newArray[i] === 'By' || newArray[i] === 'From') {
                     newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray.substring(1);
                 }
 
@@ -33,6 +33,6 @@ class Formatter {
             newArray=newArray.join(' ');
         }
         arrayFunction();
-        return newArray.join(' ')
+        return newArray
     }
 }
