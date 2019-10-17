@@ -26,9 +26,10 @@ class Formatter {
         let newArray = s;
         function arrayFunction() {
             for (let i = 0; i < newArray.length; i++) {
+              if(i>=1){
                 if (newArray[i] === 'The' || newArray[i] === 'A' || newArray[i] === 'An' || newArray[i] === 'But' || newArray[i] === 'Of' || newArray[i] === 'And' || newArray[i] === 'For' || newArray[i] === 'At' || newArray[i] === 'By' || newArray[i] === 'From') {
                     newArray[i] = newArray[i].charAt(0).toLowerCase() + newArray[i].substring(1);
-                }
+                }}
 
             }
             newArray=newArray.join(' ');
