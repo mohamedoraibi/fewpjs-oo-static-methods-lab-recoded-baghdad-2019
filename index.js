@@ -1,3 +1,4 @@
+
 class Formatter {
     //add static methods here
     static capitalize(string) {
@@ -26,7 +27,7 @@ class Formatter {
         function arrayFunction() {
             for (let i = 0; i < newArray.length; i++) {
                 if (newArray[i] == 'The' || newArray[i] == 'A' || newArray[i] == 'An' || newArray[i] == 'But' || newArray[i] == 'Of' || newArray[i] == 'And' || newArray[i] == 'For' || newArray[i] == 'At' || newArray[i] == 'By' || newArray[i] == 'From') {
-                    newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray.substring(1);
+                    newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].substring(1);
                 }
 
             }
